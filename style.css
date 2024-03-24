@@ -1,0 +1,225 @@
+/* Reset CSS */
+/* Box sizing border-box */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+/* Typography reset */
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Arial, sans-serif; /* Définir une police de caractères de base */
+	font-size: 16px; /* Définir une taille de police de base */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit; /* Hérité de la taille de police de base */
+	font-weight: inherit; /* Hérité du poids de police de base */
+}
+/* List reset */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Form elements reset */
+button,
+input,
+select,
+textarea {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+:root {
+	/* Définition des variables de couleur */
+	--very-dark-blue: hsl(220, 13%, 13%);
+	--dark-grayish-blue: hsl(219, 9%, 45%);
+	--grayish-blue: hsl(220, 14%, 75%);
+	--light-grayish-blue: hsl(223, 64%, 98%);
+	--white: hsl(0, 0%, 100%);
+	--black-opacity-75: hsla(0, 0%, 0%, 0.75); /* Noir avec 75% d'opacité */
+	--Orange: hsl(26, 100%, 55%);
+	--Paleorange: hsl(25, 100%, 94%);
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 115px;
+	/* background: var(--grayish-blue); R */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+.header .nav_bar {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav_bar .logo {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 160px;
+}
+.logo .img_logo {
+	width: 160px;
+}
+
+.nav_bar ul {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 50px;
+}
+.nav_bar ul li {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.nav_bar ul li a {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 25px;
+	text-decoration: none;
+	color: var(--grayish-blue);
+	transition: color 0.2s ease-out, border 0.2s ease-out;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 4px solid transparent;
+}
+.nav_bar ul li a:hover {
+	color: var(--black-opacity-75);
+	border-bottom: 4px solid var(--Orange);
+}
+
+.header .avatar_cart {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: 150px;
+}
+.avatar_cart .cart {
+	height: 25px;
+	width: 25px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-right: 30px;
+}
+.avatar_cart .cart .img_cart {
+	cursor: pointer;
+	width: 100%;
+}
+.avatar_cart .avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+.avatar_cart .avatar .img_avatar {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 85%;
+}
+.avatar_cart .avatar:hover {
+	background-color: var(--Orange);
+}
+
+.header .modal_cart {
+	display: none;
+	position: absolute;
+	right: 98px;
+	top: 83%;
+	width: 350px;
+	height: 250px;
+	background: #fff;
+	border-radius: 15px;
+	z-index: 10;
+	box-shadow: -20px 20px 60px #bebebe48, /* Ombre en bas à droite */ 20px 20px 60px #bebebe48;
+}
+.modal_cart .title {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 55px;
+}
+.title h1 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 20px;
+}
+.modal_cart .lineOrder {
+	width: 100%;
+	height: 1px;
+	background: var(--grayish-blue);
+}
+.modal_cart .order {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 194px;
+}
+
+.header .line {
+	height: 1px;
+	width: 84%;
+	background-color: var(--grayish-blue);
+	margin-left: 152px;
+	position: absolute;
+	bottom: 0;
+}
+.main {
+	margin-top: 90px;
+	background: #000;
+	width: 100%;
+	height: 600px;
+}
