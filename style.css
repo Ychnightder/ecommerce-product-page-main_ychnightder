@@ -269,14 +269,14 @@ body {
 	border-radius: 15px;
 }
 
-.slide_sneakers .slide_box  .slide_button {
+.slide_sneakers .slide_box .slide_button {
 	width: 100%;
 	height: 95px;
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 }
-.slide_button .img{
+.slide_button .img {
 	width: 95px;
 	height: 100%;
 	border-radius: 10px;
@@ -287,9 +287,8 @@ body {
 	transition: border 0.2s ease-out;
 }
 
-.slide_button .img img:hover{
+.slide_button .img img:hover {
 	border: 4px solid var(--Orange);
-
 }
 
 /* .slide_button .img .box1{
