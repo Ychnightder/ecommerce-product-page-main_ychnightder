@@ -236,8 +236,7 @@ body {
 	bottom: 0;
 }
 .main {
-	margin-top: 90px;
-	/* background: #eedddd; */
+	margin-top: 60px;
 	width: 100%;
 	height: 600px;
 	display: flex;
@@ -245,9 +244,8 @@ body {
 }
 .main .slide_sneakers {
 	margin-left: 150px;
-	width: 50%;
+	width: 40%;
 	height: 100%;
-	/* background: #e9b7b77c; */
 	display: flex;
 	justify-content: center;
 }
@@ -299,26 +297,23 @@ body {
 	position: absolute;
 } */
 
-
-.main .info_sneakers{
-	/* background: #58a3d5; */
+.main .info_sneakers {
 	width: 50%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
 .info_sneakers .subtitle_info {
-	margin: 85px 0  0 0px;
+	margin: 85px 0 0 0px;
 	font-size: 20px;
 	font-weight: 700;
 	color: var(--Orange);
 }
-.info_sneakers .title_info{
+.info_sneakers .title_info {
 	font-size: 35px;
 	font-weight: 700;
-	margin: 25px 0px  0 0px;
+	margin: 25px 0px 0 0px;
 	padding-right: 350px;
-
 }
 .info_sneakers .para_info {
 	font-size: 18px;
@@ -326,40 +321,41 @@ body {
 	color: var(--dark-grayish-blue);
 	font-size: 400;
 	padding: 0 290px 0 0;
-} 
+}
 .info_sneakers .price__info {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	margin-top: 30px;
 }
-.info_sneakers .price__info .newPrice_info{
+.info_sneakers .price__info .newPrice_info {
 	font-size: 30px;
 	font-weight: 700;
-	margin-right: 20px;
 }
-.price__info span{
+.price__info span {
 	padding: 2px 5px;
 	background-color: var(--Paleorange);
 	border-radius: 3px;
 	color: var(--Orange);
 	font-weight: 700;
+	margin-left: 15px;
 }
-.info_sneakers .oldPrice_info{
+.info_sneakers .oldPrice_info {
 	font-weight: 700;
 	color: var(--grayish-blue);
 	text-decoration: line-through;
 	margin-top: 15px;
 }
-.info_sneakers .button_add{
+.info_sneakers .button_add {
 	margin-top: 35px;
 	display: flex;
 	align-items: center;
 }
-.button_add .button{
+.button_add .button {
 	display: flex;
 }
-.button_add .button  button , .mid{
+.button_add .button button,
+.mid {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -369,21 +365,49 @@ body {
 	font-weight: 700;
 	transition: color 0.1s ease-in;
 }
-.button_add .button  button:hover{
+.button_add .button button:hover {
 	color: var(--Paleorange);
 }
 
-.button :nth-child(1){
+.button :nth-child(1) {
 	border-radius: 5px 0 0 5px;
 	cursor: pointer;
 	color: var(--Orange);
-	font-size: 20px;	
+	font-size: 20px;
 	font-weight: 700;
 }
-.button :nth-child(3){
-	border-radius: 0 5px  5px 0;
+.button :nth-child(3) {
+	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	color: var(--Orange);
-	font-size: 20px;	
+	font-size: 20px;
 	font-weight: 700;
+	margin-right: 20px;
+}
+.button_add .add {
+	color: #fff;
+	width: 270px;
+	height: 50px;
+}
+
+.add button {
+	width: 100%;
+	height: 100%;
+	background-color: var(--Orange);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 700;
+	transition: color 0.2s ease-out;
+}
+.add button:hover {
+	background-color: var(--Orange);
+	box-shadow: inset 0px 0px 50px 10px var(--Paleorange), 0px 0px 200px var(--Orange);
+}
+
+.add button svg {
+	margin: 0 14px;
 }
