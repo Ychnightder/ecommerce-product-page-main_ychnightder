@@ -14,3 +14,18 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+.vscode/
+node_modules/
+dist/
+*.log
+.env
+*.env.local
+*.env.*.local
+yarn-error.log
+yarn-debug.log*
+.pnp.*
+.idea/
+*.iml
+out/
+.vite
