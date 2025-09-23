@@ -1,4 +1,4 @@
-import React, { type JSX } from "react";
+import React from 'react';
 
 type Props = {
 	href?: string;
@@ -8,24 +8,20 @@ type Props = {
 	className?: string;
 };
 
-export default function HeaderLink({ href = '#', children, onClick, active = false, className = '' }: Props): JSX.Element {
+export default function Link({ href = '#', children, onClick, active = false, className = '' }: Props): React.JSX.Element {
+	const base = 'inline-flex items-center text-sm font-base transition-all duration-200 h-full border-transparent  ';
 
-  
-    const base = 'inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium transition';
-		const normal = 'text-dark-grayish-blue hover:text-very-dark-blue hover:bg-light-grayish-blue';
-		const focus = 'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-very-dark-blue/20';
-		const activeCls = 'text-very-dark-blue bg-pale-orange font-semibold';
+	const normal = 'text-grayish-blue hover:text-very-dark-blue hover:border-OrangeV border-b-4';
 
+	const activeCls = 'text-very-dark-blue border-OrangeV';
+
+	const classes = [base, active ? activeCls : normal, className].filter(Boolean).join(' ');
 
 	return (
-		<a
-			href={href}
-			onClick={onClick}
-			aria-current={active ? 'page' : undefined}
-			className={`${base} ${focus} ${active ? activeCls : normal} ${className}`.trim()}>
-			{children}
-		</a>
+		<div className="flex flex-row items-center h-[110px]">
+			<a href={href} onClick={onClick} aria-current={active ? 'page' : undefined} className={classes}>
+				{children}
+			</a>
+		</div>
 	);
 }
-
-
